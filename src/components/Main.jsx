@@ -1,15 +1,24 @@
-import { Questions } from "./Questions";
-import CardQuestion from "./CardQuestion";
+import { useState } from "react/cjs/react.production.min";
+
+import Questions from "./Questions";
+import Bookmarks from "./Bookmarks";
 
 export default function Main() {
+  const [qput, setQput] = useState(true);
+  const [bput, setBput] = useState(false);
+
+  function qSwitch(qput) {
+    setQput(!qput);
+  }
+  function bSwitch(qput) {
+    setQput(!qput);
+  }
+
   return (
     <>
       <main>
-        <ul>
-          {Questions.map((question) => (
-            <CardQuestion key={question.id} question={question.question} />
-          ))}
-        </ul>
+        <Questions active={qSwitch} />
+        <Bookmarks active={bSwitch} />
       </main>
     </>
   );

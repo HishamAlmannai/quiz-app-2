@@ -30,16 +30,16 @@ html {
     box-shadow: 0px 5px 10px black;
     z-index: 10;
   }
-  
+
   main {
-    background-color: palevioletred;
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-  }
+  background-color: palevioletred;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}  
   
   footer {
     background-color: rgb(126, 112, 218);
@@ -60,9 +60,7 @@ html {
     text-transform: uppercase;
   }
   
-  ul {
-    list-style-type: none;
-  }
+
   
   svg {
     width: 50px;
